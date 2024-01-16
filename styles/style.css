@@ -1,18 +1,19 @@
  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:wght@300;400;700;800&family=Open+Sans:ital,wght@0,700;0,800;1,400&family=Poppins:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
 *{
 font-family: 'Mulish', sans-serif;
-/*margin: 0;
- padding: 0; */
+  /* margin: 0; */
+ /* padding: 0;  */
 
 }
 /* navbar styles */
 nav{
   /* margin: 3.1rem 8.4rem; */
-  max-width: 1350px;
-  margin: 0 8.4rem;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: #FF5400 solid 1px;
 }
 .nav-logo{
   display: flex;
@@ -55,13 +56,14 @@ nav ul li a{
   .banner-img{
       background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
       height: 100vh;
-      width: 100%;
+      width: 120%;
       background-position: center;
       background-repeat: no-repeat;
       display: flex;
-      max-width: 1350px;
-      margin-right: 10rem;
+      max-width: 1440px;
+      margin: 0 auto;
       position: relative;
+      border: 1px solid blue;
      }
      .banner-content{
       /* text-align: center; */
@@ -100,14 +102,14 @@ nav ul li a{
 color: #5A5A5D;
 font-size: 1rem;
 font-weight: 400;
-/* line-height: 26px;
+ line-height: 26px;
 }
 .tour-hints ul li{
   color: rgba(19, 19, 24, 0.70);
 font-size: 1rem;
 font-weight: 400;
 margin-bottom: 1.8rem;
-/* line-height: 26px;
+line-height: 26px;
 }
 .primary-btn{
   background: #FF5400;
@@ -179,12 +181,206 @@ height: 310px;
   gap: 1.5rem;
 
 }
+ 
+/* choose style */
 
+.choose-container h3 {
+  color: #131318;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
 
+}
+.choose-container-des {
+color: rgba(19, 19, 24, 0.70);
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
 
+}
 
+.cardline-1 {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.choose-container-card-1{
+  /* border: 1px solid black; */
+border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+.choose-container-card-2{
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
+}
+.choose-container-card-3{
+  /* display: block; */
+  /* justify-content: center; */
+  padding: 2rem;
+  /* border: 1px solid black; */
+  max-width: 600px;
+  margin-left: 22rem;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
 
+}
 
+.choose-container-card-1 h4 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.choose-container-card-1 p {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 520px;
+}
+.choose-container-card-2 h4 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.choose-container-card-2 p {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 580px;
+}
+.cardline-2-title {
+  color: #131318;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+}
+.cardline-2-des {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 520px;
+}
+
+/* newsletter ..............*/
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 80px;
+}
+.newsletter-content{
+width: 474px;
+height: 422px;
+border-radius: 16px;
+border: 1px solid #FF5400;
+padding-left: 40px;
+}
+.newsletter-heading{
+color: #131318;
+font-size: 1.5rem;
+font-weight: 800;
+}
+.newsletter-description{
+width: 350px;
+color: #5A5A5D;
+font-size: 1rem;
+font-weight: 400;
+
+}
+.input-btn{
+border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+width: 390px;
+height: 50px;
+border: none;
+}
+.Subscribe-btn{
+border-radius: 8px;
+background: #FF5400;
+width: 390px;
+height: 50px;
+border: none;
+color: #FFF;
+text-align: center;
+font-size: 1.25rem;
+font-weight: 800;
+}
+.discount{
+width: 324px;
+height: 120px;
+transform: rotate(-19.628deg);
+border-radius: 16px;
+background: #FF5400;
+position: absolute;
+left: 910px;
+top: 250px;
+
+}
+.discount p {
+color: #FFF;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+}
+.discount h4{
+color: #FFF;
+font-size: 1.5rem;
+font-weight: 800;
+text-align: center;
+padding-bottom: 80px;
+
+}
+/* footer ..........*/
+
+.footer {
+background: rgba(19, 19, 24, 0.05);
+height: 500px;
+width: 1440px;
+margin: 0 auto;
+}
+.footer-content{
+  padding-top: 6rem;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem ;
+  justify-content: center;
+  /* margin-top: 110px; */
+ 
+}
+.footer-logo h3 .span-1{
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+
+}
+.footer-logo h3 .span-2{
+  color: #FF5400;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.footer-description {
+color: #5A5A5D;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.small{
+color: #131318;
+font-size: 1rem;
+font-weight: 300;
+text-align: center;
+padding-top: 5rem;
+}
 
   @media screen and (max-width:596px){
     nav {
