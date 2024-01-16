@@ -1,19 +1,19 @@
  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:wght@300;400;700;800&family=Open+Sans:ital,wght@0,700;0,800;1,400&family=Poppins:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
 *{
 font-family: 'Mulish', sans-serif;
-  /* margin: 0; */
- /* padding: 0;  */
+margin: 0;
+padding: 0; 
 
 }
 /* navbar styles */
 nav{
-  /* margin: 3.1rem 8.4rem; */
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: #FF5400 solid 1px;
+  /* border: #FF5400 solid 1px; */
+  height: 200px;
 }
 .nav-logo{
   display: flex;
@@ -53,17 +53,18 @@ nav ul li a{
   /* nav style completed */
 
    /* banner style */
-  .banner-img{
-      background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
-      height: 100vh;
-      width: 120%;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      max-width: 1440px;
+   .banner{
+    height: 600px;
+    max-width: 1440px;
       margin: 0 auto;
       position: relative;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
+   }
+  .banner-img img{
+     width: 100%;
+     /* border: 3px solid yellow; */
+     position: relative;
+  
      }
      .banner-content{
       /* text-align: center; */
@@ -71,17 +72,55 @@ nav ul li a{
       position: absolute;
       margin-top: 8rem;
       margin-left: 15rem;
+      position: absolute;
+      bottom: 15rem;
      }
+.banner-content h1 {
+color: #FFF;
+font-size: 4rem;
+font-weight: 800;
+text-align: center;
+
+     }
+.banner-content p {
+  color: #FFF;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.banner-input{
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.30);
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 5rem;
+  
+}
+.banner-input form input{
+border-radius: 8px;
+background: #FFF;
+width: 174px;
+height: 52px;
+color: rgba(19, 19, 24, 0.50);
+font-size: 1rem;
+font-weight: 400;
+text-align: center;
+margin-left: 1rem;
+
+/* border: none; */
+/* flex-shrink: 0; */
+
+}
 
 
      /* main style */
 
 
     main{
-      /* margin: 0 8.4rem; */
       max-width: 1440px;
       margin: 0 auto;
-      border: 2px solid red;
+
     }
     .tour-section{
       display: flex;
@@ -368,11 +407,13 @@ color: #5A5A5D;
 text-align: center;
 font-size: 1rem;
 font-weight: 400;
+padding-top: 2rem;
 }
 .icon{
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding-top: 5rem;
 }
 .small{
 color: #131318;
