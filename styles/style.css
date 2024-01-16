@@ -1,13 +1,15 @@
  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:wght@300;400;700;800&family=Open+Sans:ital,wght@0,700;0,800;1,400&family=Poppins:wght@500;600;700&family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap');
 *{
 font-family: 'Mulish', sans-serif;
-margin: 0;
-padding: 0;
+/*margin: 0;
+ padding: 0; */
 
 }
 /* navbar styles */
 nav{
-  margin: 3.1rem 8.4rem;
+  /* margin: 3.1rem 8.4rem; */
+  max-width: 1350px;
+  margin: 0 8.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,3 +50,96 @@ nav ul li a{
     color: #FF5400;
   }
   /* nav style completed */
+
+   /* banner style */
+  .banner-img{
+      background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+      height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      max-width: 1350px;
+      margin-right: 10rem;
+      position: relative;
+     }
+     .banner-content{
+      /* text-align: center; */
+      /* width: 50%; */
+      position: absolute;
+      margin-top: 8rem;
+      margin-left: 15rem;
+     }
+
+
+     /* main style */
+
+
+    main{
+      margin: 0 8.4rem;
+    }
+    .tour-section{
+      display: flex;
+      gap: 5rem;
+      margin-top: 2rem;
+    }
+    .tour-hints{
+      width: 50%;
+    }
+    .tour-hints h3{
+      color: #131318;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+.tour-hints p{
+color: #5A5A5D;
+font-size: 1rem;
+font-weight: 400;
+/* line-height: 26px; 162.5% */
+}
+.tour-hints ul li{
+  color: rgba(19, 19, 24, 0.70);
+font-size: 1rem;
+font-weight: 400;
+margin-bottom: 1.8rem;
+/* line-height: 26px; 162.5% */
+}
+.primary-btn{
+  background: #FF5400;
+  border-radius: 8px;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 1rem 2.25rem;
+  border: none;
+}
+
+
+.tour-img{
+ width: 50%;
+ margin-top: 3rem;
+}
+  @media screen and (max-width:596px){
+    nav {
+    /* margin: 3.1rem 8.4rem; */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+.tour-section{
+  flex-direction: column;
+}
+.tour-hints{
+  width: 100%;
+}
+main{
+  margin: 0 auto;
+}
+    
+  }
